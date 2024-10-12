@@ -1,0 +1,14 @@
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\bin\Debug\WpfNURBSCurve.exe.config
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\bin\Debug\WpfNURBSCurve.exe
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\bin\Debug\WpfNURBSCurve.pdb
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve.csprojResolveAssemblyReference.cache
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\MainWindow.g.cs
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\App.g.cs
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve_MarkupCompile.cache
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve_MarkupCompile.lref
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\MainWindow.baml
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve.g.resources
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve.Properties.Resources.resources
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve.csproj.GenerateResource.Cache
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve.exe
+C:\Users\kenne\Documents\Visual Studio 2015\Projects\WpfNURBSCurve\WpfNURBSCurve\obj\Debug\WpfNURBSCurve.pdb

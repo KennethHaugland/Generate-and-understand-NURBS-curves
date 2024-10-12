@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfNURBSCurve.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNURBSCurve"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1087" Width="763.5">
+    <StackPanel>
+        <Border BorderThickness="2" BorderBrush="Black" VerticalAlignment="Center" Width="500" Height="250" Margin="20">
+            <Canvas x:Name="canDrawing" Background="White" MouseDown="canDrawing_MouseDown"></Canvas>
+        </Border>
+
+        <Button x:Name="btnDraw" Click="btnDraw_Click" Margin="20,0,20,5">
+            <Button.Content>
+                <TextBlock FontSize="26">Draw B-Spline/NURBS curve</TextBlock>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="btnClear" Click="btnClear_Click" Margin="20,5,20,0">
+            <Button.Content>
+                <TextBlock FontSize="26">Clear all</TextBlock>
+            </Button.Content>
+        </Button>
+
+        <Viewbox HorizontalAlignment="Left" Height="40" Margin="20,0,0,0">
+            <RadioButton x:Name="rbtnBSpline" GroupName="CurveType" Checked="rbtnBSpline_Checked" IsChecked="True">B-Spline</RadioButton>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left" Height="40" Margin="20,0,0,0">
+            <RadioButton x:Name="rbtnNURBS"  GroupName="CurveType"  Checked="rbtnBSpline_Checked">NURBS</RadioButton>
+        </Viewbox>
+        <WrapPanel Margin="20">
+            <TextBlock FontSize="26">Degree:</TextBlock>
+            <TextBox FontSize="26" TextAlignment="Center" Width="50" x:Name="txtDegree" TextChanged="txtDegree_TextChanged">0</TextBox>
+        </WrapPanel>
+
+        
+        
+        <Viewbox HorizontalAlignment="Left" Height="40" Margin="20,0,0,0">
+            <RadioButton x:Name="rbtnClamped" GroupName="KnotType" Checked="rbtnKnotType"  IsChecked="True" Content="Clamped uniform internal knot span"/>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left" Height="40" Margin="20,0,0,0">
+            <RadioButton x:Name="rbtnUniform" GroupName="KnotType"  Checked="rbtnKnotType" Content="Uniform knot span"/>
+        </Viewbox>
+
+        <TextBlock Margin="20,20,0,0" FontSize="26">Knot Vector:</TextBlock>
+        <TextBox Margin="20,0,0,0" HorizontalAlignment="Left" FontSize="26" Width="500" x:Name="txtKnotVector">0</TextBox>
+
+        <ListView x:Name="lstPoints" ItemsSource="{Binding}" Margin="20" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="300">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="200" DisplayMemberBinding="{Binding MyPoint}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding}"  Width="67" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumn.Header>
+                            <TextBlock FontSize="26">Point</TextBlock>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                    <GridViewColumn Width="200" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Path=Weight,Mode=TwoWay}"  Width="67" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                        <GridViewColumn.Header>
+                            <TextBlock FontSize="26">Weight</TextBlock>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>
